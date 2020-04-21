@@ -9,7 +9,6 @@ class Layout extends Document {
 		return (
 			<Html>
 				<Head>
-					<title>Test Site</title>
 					<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 					<meta httpEquiv="X-UA-Compatible" content="ie=edge" />
 					<link

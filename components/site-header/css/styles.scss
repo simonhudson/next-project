@@ -1,6 +1,6 @@
-@import '../../../public/css/main.scss';
-
 .site-header {
-    @include padding();
+    border-top: 10px solid green;
     background: red;
+    padding: 20px;
+    width: 100%;
 }
