@@ -5,7 +5,7 @@ import data from './data';
 
 const MainNavigation = () => {
 	return (
-		<nav className="main-navigation">
+		<nav className="main-navigation" data-test="main-navigation">
 			<ul className="main-navigation__list">
 				{data.map((item, index) => {
 					return (
