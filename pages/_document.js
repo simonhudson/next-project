@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
-import MainNavigation from '~/main-navigation';
+import SiteHeader from '~/site-header';
 
 class Layout extends Document {
 	render() {
@@ -22,7 +22,7 @@ class Layout extends Document {
 					/>
 				</Head>
 				<body>
-					<MainNavigation />
+					<SiteHeader />
 					<Main />
 					<NextScript />
 				</body>

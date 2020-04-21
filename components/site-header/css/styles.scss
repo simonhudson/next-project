@@ -1,0 +1,6 @@
+@import '../../../public/css/main.scss';
+
+.site-header {
+    @include padding();
+    background: red;
+}
