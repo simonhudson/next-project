@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react';
-import { mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import MainNavigation from './index';
 import { assertElementExists } from '$/tests/utilities';
 
@@ -16,5 +16,5 @@ describe('MainNavigation', () => {
 		assertElementExists(objectUnderTest, selector);
 	});
 
-	const initialise = (props) => (objectUnderTest = mount(<MainNavigation />));
+	const initialise = (props) => (objectUnderTest = shallow(<MainNavigation />));
 });
