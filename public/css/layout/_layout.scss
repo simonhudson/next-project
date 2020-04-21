@@ -1,0 +1,11 @@
+main {
+	@include padding-y-lg();
+}
+
+.wrap {
+	@include wrap();	
+}
+
+.wrap--narrow {
+	@include wrap-narrow();
+}

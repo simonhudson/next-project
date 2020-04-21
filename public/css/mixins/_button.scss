@@ -1,0 +1,37 @@
+@mixin btn() {
+    @include border-radius(2px);
+    @include padding();
+    @include strong();
+    @include text-center();
+    border: 2px solid transparent;
+    background: palette(primary, black);
+    color: palette(primary, white);
+	display: inline-block;
+	text-decoration: none;
+}
+
+@mixin btn--primary() {
+	@include btn();
+    background: palette(primary, b);
+	color: palette(primary, white);
+
+    &.btn--is-hollow {
+        background: palette(primary, white);
+        border-color: palette(primary, b);
+        color: palette(primary, b);
+    }
+
+}
+
+@mixin btn--secondary() {
+	@include btn();
+    background: palette(primary, a);
+	color: palette(primary, white);
+
+    &.btn--is-hollow {
+        background: palette(primary, white);
+        border-color: palette(primary, a);
+        color: palette(primary, a);
+    }
+
+}

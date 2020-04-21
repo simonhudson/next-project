@@ -5,6 +5,5 @@
         "pages/",
         "public/"
 	],
-	"ignore": [
-	]
+	"ext": "js css scss json"
 }

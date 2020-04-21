@@ -1,0 +1,25 @@
+// Typography
+$base-font-size: 14px;
+$base-font-sans-serif: 'Open Sans', arial, helvetica, sans-serif;
+$base-font-serif: 'georgia', 'times new roman', serif;
+$base-font-family: $base-font-sans-serif;
+$base-font-semi-bold: 'opensans_semibold';
+$base-font-bold: 'opensans_bold';
+$base-font-code: 'Courier New', Courier, monospace;
+$base-font-weight: 300;
+$base-line-height: $base-font-size * 1.8;
+
+// Spacing
+$spacing: 16px;
+$spacing-xsm: $spacing / 4;
+$spacing-sm: $spacing / 2;
+$spacing-lg: $spacing * 2;
+$spacing-xlg: $spacing * 4;
+$spacing-xxlg: $spacing * 6;
+
+// Paths
+$img-path: 'assets/imgs/';
+$font-path: 'assets/fonts/';
+
+// Dimensions
+$width-full--desktop: 1016px;

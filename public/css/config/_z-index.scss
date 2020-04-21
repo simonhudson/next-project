@@ -1,0 +1,9 @@
+// ------------------------------------------------------------------------------------------------------------------------//
+// Z-INDEX
+// Returns index of item in the $z-index list which is then set as z-index value
+// Prevents attempts to over-ride z-index with daft values such as 99999
+//
+// Usage:
+//  z-index:index($z-index, 'siteHeader');
+// ------------------------------------------------------------------------------------------------------------------------//
+$z-index: 'access-nav', 'site-header'

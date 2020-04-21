@@ -1,0 +1,13 @@
+@mixin gradient($value: 'primary, a') {
+	$palette-value: palette(primary, a);
+	@if $value == 'primary, b' { $palette-value: palette(primary, b); }
+	background: #{$palette-value};
+	background-image: linear-gradient(-180deg, $palette-value 0%, darken($palette-value, 7%) 100%);
+}
+
+@mixin gradient-invert($value: 'primary, a') {
+	$palette-value: palette(primary, a);
+	@if $value == 'primary, b' { $palette-value: palette(primary, b); }
+	background: #{$palette-value};
+	background-image: linear-gradient(-180deg, $palette-value 0%, darken($palette-value, 10%) 100%);
+}

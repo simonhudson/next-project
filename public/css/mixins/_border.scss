@@ -1,0 +1,22 @@
+$border-colour--default: #ddd;
+$border--default: 1px solid $border-colour--default;
+
+@mixin border() {
+	border: $border--default
+}
+
+@mixin border-t() {
+	border-top: $border--default
+}
+
+@mixin border-r() {
+	border-right: $border--default
+}
+
+@mixin border-b() {
+	border-bottom: $border--default
+}
+
+@mixin border-l() {
+	border-left: $border--default
+}

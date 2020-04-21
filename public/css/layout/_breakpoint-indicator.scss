@@ -1,0 +1,19 @@
+body::after {
+	@include position-bl();
+	@include visually-hidden();
+	display: inline-block;
+	content: 'mobile';
+	
+	@include media(tablet-p) {
+	    content: 'tablet-p'
+	}
+	
+	@include media(tablet-l) {
+	    content: 'tablet-l'
+	}
+	
+	@include media(desktop) {
+	    content: 'desktop'
+	}
+	
+}

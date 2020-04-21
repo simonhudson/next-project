@@ -1,0 +1,23 @@
+@mixin position-tl($top:0, $left:$top) {
+	left: $left;
+	position: absolute;
+	top: $top;
+}
+
+@mixin position-tr($top:0, $right:$top) {
+	position: absolute;
+	right: $right;
+	top: $top;
+}
+
+@mixin position-br($bottom:0, $right:$bottom) {
+	bottom: $bottom;
+	position: absolute;
+	right: $right;
+}
+
+@mixin position-bl($bottom:0, $left:$bottom) {
+	bottom: $bottom;
+	left: $left;
+	position: absolute;
+}

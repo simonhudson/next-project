@@ -1,0 +1,39 @@
+.margin { @include margin(); }
+.margin-t { @include margin-t(); }
+.margin-r { @include margin-r(); }
+.margin-b { @include margin-b(); }
+.margin-l { @include margin-l(); }
+.margin-x { @include margin-x(); }
+.margin-y { @include margin-y(); }
+
+.margin-xsm { @include margin-xsm(); }
+.margin-t-xsm { @include margin-t-xsm(); }
+.margin-r-xsm { @include margin-r-xsm(); }
+.margin-b-xsm { @include margin-b-xsm(); }
+.margin-l-xsm { @include margin-l-xsm(); }
+.margin-x-xsm { @include margin-x-xsm(); }
+.margin-y-xsm { @include margin-y-xsm(); }
+
+.margin-sm { @include margin-sm(); }
+.margin-t-sm { @include margin-t-sm(); }
+.margin-r-sm { @include margin-r-sm(); }
+.margin-b-sm { @include margin-b-sm(); }
+.margin-l-sm { @include margin-l-sm(); }
+.margin-x-sm { @include margin-x-sm(); }
+.margin-y-sm { @include margin-y-sm(); }
+
+.margin-lg { @include margin-lg(); }
+.margin-t-lg { @include margin-t-lg(); }
+.margin-r-lg { @include margin-r-lg(); }
+.margin-b-lg { @include margin-b-lg(); }
+.margin-l-lg { @include margin-l-lg(); }
+.margin-x-lg { @include margin-x-lg(); }
+.margin-y-lg { @include margin-y-lg(); }
+
+.margin-xlg { @include margin-xlg(); }
+.margin-t-xlg { @include margin-t-xlg(); }
+.margin-r-xlg { @include margin-r-xlg(); }
+.margin-b-xlg { @include margin-b-xlg(); }
+.margin-l-xlg { @include margin-l-xlg(); }
+.margin-x-xlg { @include margin-x-xlg(); }
+.margin-y-xlg { @include margin-y-xlg(); }

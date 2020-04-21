@@ -1,0 +1,49 @@
+@mixin no-padding() { padding:0 }
+
+@mixin padding-xsm() { padding: rem($spacing-xsm); }
+@mixin padding-t-xsm() { padding-top: rem($spacing-xsm); }
+@mixin padding-r-xsm() { padding-right: rem($spacing-xsm); }
+@mixin padding-b-xsm() { padding-bottom: rem($spacing-xsm); }
+@mixin padding-l-xsm() { padding-left: rem($spacing-xsm); }
+@mixin padding-x-xsm() { padding-right: rem($spacing-xsm); padding-left: rem($spacing-xsm); }
+@mixin padding-y-xsm() { padding-top: rem($spacing-xsm); padding-bottom: rem($spacing-xsm); }
+
+@mixin padding-sm() { padding: rem($spacing-sm); }
+@mixin padding-t-sm() { padding-top: rem($spacing-sm); }
+@mixin padding-r-sm() { padding-right: rem($spacing-sm); }
+@mixin padding-b-sm() { padding-bottom: rem($spacing-sm); }
+@mixin padding-l-sm() { padding-left: rem($spacing-sm); }
+@mixin padding-x-sm() { padding-right: rem($spacing-sm); padding-left: rem($spacing-sm); }
+@mixin padding-y-sm() { padding-top: rem($spacing-sm); padding-bottom: rem($spacing-sm); }
+
+@mixin padding() { padding: rem($spacing); }
+@mixin padding-t() { padding-top: rem($spacing); }
+@mixin padding-r() { padding-right: rem($spacing); }
+@mixin padding-b() { padding-bottom: rem($spacing); }
+@mixin padding-l() { padding-left: rem($spacing); }
+@mixin padding-x() { padding-right: rem($spacing); padding-left: rem($spacing); }
+@mixin padding-y() { padding-top: rem($spacing); padding-bottom: rem($spacing); }
+
+@mixin padding-lg() { padding: rem($spacing-lg); }
+@mixin padding-t-lg() { padding-top: rem($spacing-lg); }
+@mixin padding-r-lg() { padding-right: rem($spacing-lg); }
+@mixin padding-b-lg() { padding-bottom: rem($spacing-lg); }
+@mixin padding-l-lg() { padding-left: rem($spacing-lg); }
+@mixin padding-x-lg() { padding-right: rem($spacing-lg); padding-left: rem($spacing-lg); }
+@mixin padding-y-lg() { padding-top: rem($spacing-lg); padding-bottom: rem($spacing-lg); }
+
+@mixin padding-xlg() { padding: rem($spacing-xlg); }
+@mixin padding-t-xlg() { padding-top: rem($spacing-xlg); }
+@mixin padding-r-xlg() { padding-right: rem($spacing-xlg); }
+@mixin padding-b-xlg() { padding-bottom: rem($spacing-xlg); }
+@mixin padding-l-xlg() { padding-left: rem($spacing-xlg); }
+@mixin padding-x-xlg() { padding-right: rem($spacing-xlg); padding-left: rem($spacing-xlg); }
+@mixin padding-y-xlg() { padding-top: rem($spacing-xlg); padding-bottom: rem($spacing-xlg); }
+
+@mixin padding-xxlg() { padding: rem($spacing-xxlg); }
+@mixin padding-t-xxlg() { padding-top: rem($spacing-xxlg); }
+@mixin padding-r-xxlg() { padding-right: rem($spacing-xxlg); }
+@mixin padding-b-xxlg() { padding-bottom: rem($spacing-xxlg); }
+@mixin padding-l-xxlg() { padding-left: rem($spacing-xxlg); }
+@mixin padding-x-xxlg() { padding-right: rem($spacing-xxlg); padding-left: rem($spacing-xxlg); }
+@mixin padding-y-xxlg() { padding-top: rem($spacing-xxlg); padding-bottom: rem($spacing-xxlg); }

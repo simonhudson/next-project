@@ -1,0 +1,36 @@
+*,
+fieldset {
+    box-sizing: border-box;
+	font-family: $base-font-family;
+    font-size: $base-font-size;
+    font-weight: $base-font-weight;
+    margin: 0;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+}
+
+html {
+    background: #fff;
+    color: palette(primary, bodyText);
+    position: relative;
+}
+
+span, strong, em {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.no-js-alert {
+    @include margin-b-lg();
+    display: block;
+}
+
+fieldset {
+    @include no-padding();
+    border: 0;
+}
+
+details summary::marker,
+details summary::-webkit-details-marker {
+    display: none;
+}

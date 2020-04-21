@@ -1,0 +1,49 @@
+@mixin no-margin() { margin:0 }
+
+@mixin margin-xsm() { margin: rem($spacing); }
+@mixin margin-t-xsm() { margin-top: rem($spacing-xsm); }
+@mixin margin-r-xsm() { margin-right: rem($spacing-xsm); }
+@mixin margin-b-xsm() { margin-bottom: rem($spacing-xsm); }
+@mixin margin-l-xsm() { margin-left: rem($spacing-xsm); }
+@mixin margin-x-xsm() { margin-right: rem($spacing-xsm); margin-left: rem($spacing-xsm); }
+@mixin margin-y-xsm() { margin-top: rem($spacing-xsm); margin-bottom: rem($spacing-xsm); }
+
+@mixin margin-sm() { margin: rem($spacing-sm); }
+@mixin margin-t-sm() { margin-top: rem($spacing-sm); }
+@mixin margin-r-sm() { margin-right: rem($spacing-sm); }
+@mixin margin-b-sm() { margin-bottom: rem($spacing-sm); }
+@mixin margin-l-sm() { margin-left: rem($spacing-sm); }
+@mixin margin-x-sm() { margin-right: rem($spacing-sm); margin-left: rem($spacing-sm); }
+@mixin margin-y-sm() { margin-top: rem($spacing-sm); margin-bottom: rem($spacing-sm); }
+
+@mixin margin() { margin: rem($spacing); }
+@mixin margin-t() { margin-top: rem($spacing); }
+@mixin margin-r() { margin-right: rem($spacing); }
+@mixin margin-b() { margin-bottom: rem($spacing); }
+@mixin margin-l() { margin-left: rem($spacing); }
+@mixin margin-x() { margin-right: rem($spacing); margin-left: rem($spacing); }
+@mixin margin-y() { margin-top: rem($spacing); margin-bottom: rem($spacing); }
+
+@mixin margin-lg() { margin: rem($spacing-lg); }
+@mixin margin-t-lg() { margin-top: rem($spacing-lg); }
+@mixin margin-r-lg() { margin-right: rem($spacing-lg); }
+@mixin margin-b-lg() { margin-bottom: rem($spacing-lg); }
+@mixin margin-l-lg() { margin-left: rem($spacing-lg); }
+@mixin margin-x-lg() { margin-right: rem($spacing-lg); margin-left: rem($spacing-lg); }
+@mixin margin-y-lg() { margin-top: rem($spacing-lg); margin-bottom: rem($spacing-lg); }
+
+@mixin margin-xlg() { margin: rem($spacing-xlg); }
+@mixin margin-t-xlg() { margin-top: rem($spacing-xlg); }
+@mixin margin-r-xlg() { margin-right: rem($spacing-xlg); }
+@mixin margin-b-xlg() { margin-bottom: rem($spacing-xlg); }
+@mixin margin-l-xlg() { margin-left: rem($spacing-xlg); }
+@mixin margin-x-xlg() { margin-right: rem($spacing-xlg); margin-left: rem($spacing-xlg); }
+@mixin margin-y-xlg() { margin-top: rem($spacing-xlg); margin-bottom: rem($spacing-xlg); }
+
+@mixin margin-xxlg() { margin: rem($spacing-xxlg); }
+@mixin margin-t-xxlg() { margin-top: rem($spacing-xxlg); }
+@mixin margin-r-xxlg() { margin-right: rem($spacing-xxlg); }
+@mixin margin-b-xxlg() { margin-bottom: rem($spacing-xxlg); }
+@mixin margin-l-xxlg() { margin-left: rem($spacing-xxlg); }
+@mixin margin-x-xxlg() { margin-right: rem($spacing-xxlg); margin-left: rem($spacing-xxlg); }
+@mixin margin-y-xxlg() { margin-top: rem($spacing-xxlg); margin-bottom: rem($spacing-xxlg); }

@@ -1,0 +1,14 @@
+@mixin sticky-shared() {
+	@include width-full();
+	position: fixed;
+}
+
+@mixin sticky-top() {
+	@include position-tl();
+	@include sticky-shared();
+}
+
+@mixin sticky-bottom() {
+	@include position-bl();
+	@include sticky-shared();
+}

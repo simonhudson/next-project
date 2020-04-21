@@ -1,0 +1,5 @@
+.is-sticky {
+	@include width-full();
+	@include position-tl();
+	position: fixed;
+}

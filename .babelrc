@@ -19,6 +19,10 @@
                     {
                         "rootPathPrefix": "~",
                         "rootPathSuffix": "components"
+                    },
+                    {
+                        "rootPathPrefix": "&",
+                        "rootPathSuffix": "public"
                     }
                 ]
             }

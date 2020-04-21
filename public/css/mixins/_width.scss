@@ -1,0 +1,27 @@
+@mixin width-full() {
+	width:100%;
+}
+
+@mixin width-full--desktop() {
+	width: $width-full--desktop;
+}
+
+@mixin width-half() {
+	width:50%;
+}
+
+@mixin width-third() {
+	width:33.33333%;
+}
+
+@mixin width-two-thirds() {
+	width:66.66666%;
+}
+
+@mixin width-quarter() {
+	width:25%;
+}
+
+@mixin width-fifth() {
+	width:20%;
+}

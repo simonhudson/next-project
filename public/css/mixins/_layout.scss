@@ -1,0 +1,18 @@
+@mixin wrap() {
+	margin: 0 auto;
+	width: 94%;
+
+	@include media(tablet-l) {
+		@include width-full--desktop();
+	}
+	
+}
+
+@mixin wrap-narrow() {
+	@include wrap();
+
+	@include media(tablet-p) {
+		width: 45%;
+	}
+
+}
