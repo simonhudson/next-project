@@ -6,7 +6,7 @@ import { Header } from './styles';
 
 const SiteHeader = (props) => {
 	return (
-		<Header style="background: green" data-test="site-header">
+		<Header {...props}>
 			<MainNavigation />
 		</Header>
 	);
