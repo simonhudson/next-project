@@ -2,13 +2,13 @@
 
 import React from 'react';
 import MainNavigation from '~/main-navigation';
-import './css/styles.scss';
+import { Header } from './styles';
 
-const SiteHeader = () => {
+const SiteHeader = (props) => {
 	return (
-		<header className="site-header" data-test="site-header">
+		<Header style="background: green" data-test="site-header">
 			<MainNavigation />
-		</header>
+		</Header>
 	);
 };
 

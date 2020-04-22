@@ -2,6 +2,8 @@
 
 import React from 'react';
 import Head from 'next/head';
+import { ThemeProvider } from 'styled-components';
+import Theme from '&/theme';
 import '&/css/main.scss';
 
 const App = ({ Component, pageProps }) => {
@@ -10,7 +12,9 @@ const App = ({ Component, pageProps }) => {
 			<Head>
 				<title>Test Site</title>
 			</Head>
-			<Component {...pageProps} />
+			<ThemeProvider theme={Theme}>
+				<Component {...pageProps} />
+			</ThemeProvider>
 		</>
 	);
 };
