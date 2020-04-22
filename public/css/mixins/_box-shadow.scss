@@ -1,3 +1,0 @@
-@mixin box-shadow($x: 0, $y: 0, $spread: 5px, $colour: #dedede) {
-	box-shadow: #{$x} #{$y} #{$spread} #{$colour};
-}

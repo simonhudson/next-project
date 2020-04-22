@@ -1,9 +1,9 @@
 *,
 fieldset {
     box-sizing: border-box;
-	font-family: $base-font-family;
-    font-size: $base-font-size;
-    font-weight: $base-font-weight;
+	font-family: 'Open Sans', arial, helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
     margin: 0;
     padding: 0;
     text-rendering: optimizeLegibility;
@@ -11,7 +11,7 @@ fieldset {
 
 html {
     background: #fff;
-    color: palette(primary, bodyText);
+    color: #5d5d5d;
     position: relative;
 }
 
@@ -21,13 +21,12 @@ span, strong, em {
 }
 
 .no-js-alert {
-    @include margin-b-lg();
     display: block;
 }
 
 fieldset {
-    @include no-padding();
     border: 0;
+    padding: 0;
 }
 
 details summary::marker,
