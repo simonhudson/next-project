@@ -5,7 +5,7 @@ import { mount } from 'enzyme';
 import { expect } from 'chai';
 import Icon from './index';
 const cloneDeep = require('lodash/cloneDeep');
-import { assertElementExists, assertElementDoesNotExist } from '&/tests/utilities';
+import { assertElementExists, assertElementDoesNotExist } from '$/tests/utilities';
 
 const baseProps = {
 	type: 'bars',
