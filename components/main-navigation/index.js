@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import MainNavigationToggle from './toggle';
 import data from './data';
-import { Wrapper } from './styles';
+import { Wrapper, List, Item, Link } from './styles';
 
 class MainNavigation extends Component {
 	constructor(props) {
@@ -32,15 +32,15 @@ class MainNavigation extends Component {
 					toggleClicked={this.state.toggleClicked}
 					data-test="main-navigation"
 				>
-					<ul className="main-navigation__list">
+					<List>
 						{data.map((item, index) => {
 							return (
-								<li key={index} className="main-navigation__item">
-									<a href={item.href}>{item.label}</a>
-								</li>
+								<Item key={index}>
+									<Link href={item.href}>{item.label}</Link>
+								</Item>
 							);
 						})}
-					</ul>
+					</List>
 				</Wrapper>
 			</>
 		);

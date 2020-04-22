@@ -1,6 +1,7 @@
 'use strict';
 
 import styled, { css } from 'styled-components';
+// import { rem } from 'polished';
 
 const Wrapper = styled.nav`
 	${({ theme }) => theme.animation.defaults}
@@ -51,6 +52,33 @@ const Wrapper = styled.nav`
 
 }`;
 
+const List = styled.ul`
+	list-style: none;
+
+	${({ theme }) =>
+		theme.media(
+			'tablet-l',
+			`
+			display: flex;
+			`
+		)};
+`;
+
+const Item = styled.li``;
+
+const Link = styled.a`
+	color: ${({ theme }) => theme.palette.primary.bodyText};
+	text-transform: uppercase;
+	font-weight: 600;
+	text-decoration: none;
+
+	${({ theme }) =>
+		theme.media(
+			'tablet-l',
+			`
+			`
+		)};
+`;
 // .main-navigation__link {
 //     @include border-b();
 //     @include padding();
@@ -77,4 +105,4 @@ const Wrapper = styled.nav`
 // 	color: red;
 // `;
 
-export { Wrapper };
+export { Wrapper, List, Item, Link };
