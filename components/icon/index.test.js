@@ -1,11 +1,10 @@
 'use strict';
 
 import React from 'react';
-import { mount } from 'enzyme';
 import { expect } from 'chai';
 import Icon from './index';
 const cloneDeep = require('lodash/cloneDeep');
-import { assertElementExists, assertElementDoesNotExist } from '$/tests/utilities';
+import { assertElementExists, assertElementDoesNotExist, mountWithTheme } from '$/tests/utilities';
 
 const baseProps = {
 	type: 'bars',
@@ -31,5 +30,5 @@ describe('Icon', () => {
 		expect(objectUnderTest.find(selector).hasClass('fa-bars')).to.equal(true);
 	});
 
-	const initialise = (props) => (objectUnderTest = mount(<Icon {...props} />));
+	const initialise = (props) => (objectUnderTest = mountWithTheme(<Icon {...props} />));
 });

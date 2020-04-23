@@ -1,6 +1,10 @@
 'use strict';
 
+import React from 'react';
 import { expect } from 'chai';
+import { mount, shallow } from 'enzyme';
+import { ThemeProvider } from 'styled-components';
+import Theme from '&/theme';
 
 const assertElementExists = (objectUnderTest, elements) => {
 	const doAssertion = (element) => {
@@ -22,7 +26,12 @@ const assertElementDoesNotExist = (objectUnderTest, elements) => {
 	else doAssertion(elements);
 };
 
+const mountWithTheme = (childToMount) => {
+	return mount(shallow(<ThemeProvider theme={Theme}>{childToMount}</ThemeProvider>).get(0));
+};
+
 module.exports = {
 	assertElementExists,
 	assertElementDoesNotExist,
+	mountWithTheme,
 };

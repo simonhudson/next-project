@@ -1,9 +1,10 @@
 'use strict';
 
 import React, { Component } from 'react';
+import Link from 'next/link';
 import MainNavigationToggle from './toggle';
 import data from './data';
-import { Wrapper, List, Item, Link } from './index.styles';
+import { Wrapper, List, Item, ItemLink } from './index.styles';
 
 class MainNavigation extends Component {
 	constructor(props) {
@@ -36,7 +37,9 @@ class MainNavigation extends Component {
 						{data.map((item, index) => {
 							return (
 								<Item key={index}>
-									<Link href={item.href}>{item.label}</Link>
+									<Link href={item.href}>
+										<ItemLink href={item.href}>{item.label}</ItemLink>
+									</Link>
 								</Item>
 							);
 						})}

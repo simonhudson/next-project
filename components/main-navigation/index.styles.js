@@ -77,7 +77,7 @@ const Item = styled.li`
 		)};
 `;
 
-const Link = styled.a`
+const ItemLink = styled.a`
 	border-bottom: 1px solid #ddd;
 	color: ${({ theme }) => theme.palette.primary.bodyText};
 	display: block;
@@ -95,4 +95,4 @@ const Link = styled.a`
 		)};
 `;
 
-export { Wrapper, List, Item, Link };
+export { Wrapper, List, Item, ItemLink };
