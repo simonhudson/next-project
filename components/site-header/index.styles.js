@@ -4,16 +4,16 @@ import styled from 'styled-components';
 import { rem } from 'polished';
 
 const Header = styled.header`
-	background: #ededed;
+	background: ${({ theme }) => theme.palette.primary.white};
 	display: flex;
-	height: ${rem(80)};
-	padding: ${rem(20)};
+	padding: ${rem(30)} 0;
 
 	${({ theme }) =>
 		theme.media(
 			'tablet-l',
 			`
 			justify-content: space-between;
+			padding: ${rem(20)};
 			`
 		)};
 

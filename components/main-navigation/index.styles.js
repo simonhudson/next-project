@@ -1,7 +1,7 @@
 'use strict';
 
 import styled, { css } from 'styled-components';
-// import { rem } from 'polished';
+import { rem } from 'polished';
 
 const Wrapper = styled.nav`
 	${({ theme }) => theme.animation.defaults}
@@ -60,14 +60,28 @@ const List = styled.ul`
 			'tablet-l',
 			`
 			display: flex;
+			justify-content: flex-end;
 			`
 		)};
 `;
 
-const Item = styled.li``;
+const Item = styled.li`
+	${({ theme }) =>
+		theme.media(
+			'tablet-l',
+			`
+			&:not(:last-of-type) {
+				margin-right: ${rem(20)};
+			}
+			`
+		)};
+`;
 
 const Link = styled.a`
+	border-bottom: 1px solid #ddd;
 	color: ${({ theme }) => theme.palette.primary.bodyText};
+	display: block;
+	padding: ${rem(20)};
 	text-transform: uppercase;
 	font-weight: 600;
 	text-decoration: none;
@@ -76,33 +90,9 @@ const Link = styled.a`
 		theme.media(
 			'tablet-l',
 			`
+			border: 0;
 			`
 		)};
 `;
-// .main-navigation__link {
-//     @include border-b();
-//     @include padding();
-//     @include semi-strong();
-//     @include transition('background');
-//     @include uppercase();
-//     background: transparent;
-//     color: palette(primary, bodyText);
-//     display: block;
-
-//     &:hover,
-//     &:focus {
-//         background: #dfdfdf;
-//     }
-
-//     @include media(tablet-l) {
-//         border: 0;
-//         display: inline-block;
-//     }
-
-// }
-
-// const Item = styled.a`
-// 	color: red;
-// `;
 
 export { Wrapper, List, Item, Link };

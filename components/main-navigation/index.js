@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import MainNavigationToggle from './toggle';
 import data from './data';
-import { Wrapper, List, Item, Link } from './styles';
+import { Wrapper, List, Item, Link } from './index.styles';
 
 class MainNavigation extends Component {
 	constructor(props) {

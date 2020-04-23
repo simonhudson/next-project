@@ -6,11 +6,11 @@ import { rem } from 'polished';
 const ToggleButton = styled.button`
     background: 0;
     border: 0;
-	height: ${rem(30)};
+	height: ${rem(40)};
 	position: absolute;
 	right: ${rem(10)};
 	top: ${rem(10)};
-    width: ${rem(30)};
+    width: ${rem(40)};
 
     ${({ theme }) =>
 		theme.media(
@@ -19,6 +19,10 @@ const ToggleButton = styled.button`
 			display: none;
 			`
 		)};
+
+	.fa {
+		font-size: ${rem(40)};
+	}
 
 }`;
 

@@ -2,12 +2,12 @@
 
 import React from 'react';
 import MainNavigation from '~/main-navigation';
-import { Header } from './styles';
+import { Header } from './index.styles';
 
 const SiteHeader = (props) => {
 	return (
 		<Header {...props}>
-			<MainNavigation />
+			<MainNavigation currentPage="home" />
 		</Header>
 	);
 };
