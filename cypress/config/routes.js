@@ -2,5 +2,5 @@
 
 module.exports = {
 	home: `/`,
-	about: '/',
+	about: '/about',
 };
