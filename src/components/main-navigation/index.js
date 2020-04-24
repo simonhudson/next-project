@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import Link from 'next/link';
 import MainNavigationToggle from './toggle';
 import data from './data';
-import { Wrapper, List, Item, ItemLink } from './index.styles';
+import { Wrapper, Overlay, List, Item, ItemLink } from './index.styles';
 
 class MainNavigation extends Component {
 	constructor(props) {
@@ -28,6 +28,7 @@ class MainNavigation extends Component {
 		return (
 			<>
 				<MainNavigationToggle onClick={this.toggleMainNavigation} navigationIsVisible={this.state.isVisible} />
+				{this.state.isVisible && <Overlay />}
 				<Wrapper
 					isVisible={this.state.isVisible}
 					toggleClicked={this.state.toggleClicked}

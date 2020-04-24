@@ -5,12 +5,15 @@ import { rem } from 'polished';
 
 const Wrapper = styled.nav`
 	${({ theme }) => theme.animation.defaults}
-    background: #eee;
+	background: #fff;
+	box-shadow: 0 0 ${rem(10)} ${({ theme }) => theme.palette.primary.bodyText};
+	background: #eee;
 	height: 100vh;
 	position: absolute;
 	left: -75%;
 	top: 0;
 	width: 75%;
+	z-index: 3;
 	
 	@keyframes slide-in-from-left {
 		0% { left: -100vw; }
@@ -51,6 +54,17 @@ const Wrapper = styled.nav`
 		`};
 
 }`;
+
+const Overlay = styled.div`
+	${({ theme }) => theme.animation.defaults}
+	background: rgba(0, 0, 0, 0.25);
+	height: 100vh;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100vw;
+	z-index: 1;
+`;
 
 const List = styled.ul`
 	list-style: none;
@@ -95,4 +109,4 @@ const ItemLink = styled.a`
 		)};
 `;
 
-export { Wrapper, List, Item, ItemLink };
+export { Wrapper, Overlay, List, Item, ItemLink };

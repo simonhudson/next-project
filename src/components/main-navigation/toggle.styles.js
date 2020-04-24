@@ -10,7 +10,8 @@ const ToggleButton = styled.button`
 	position: absolute;
 	right: ${rem(10)};
 	top: ${rem(10)};
-    width: ${rem(40)};
+	width: ${rem(40)};
+	z-index: 2;
 
     ${({ theme }) =>
 		theme.media(
