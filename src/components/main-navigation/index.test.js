@@ -2,7 +2,7 @@
 
 import React from 'react';
 import MainNavigation from './index';
-import { assertElementExists, mountWithTheme } from '$/tests/utilities';
+import { assertElementExists, mountWithTheme } from '~/config/tests/utilities';
 
 describe('MainNavigation', () => {
 	let objectUnderTest;

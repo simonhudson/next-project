@@ -4,7 +4,7 @@ import React from 'react';
 import { expect } from 'chai';
 import { mount, shallow } from 'enzyme';
 import { ThemeProvider } from 'styled-components';
-import Theme from '&/theme';
+import Theme from '~/theme';
 
 const assertElementExists = (objectUnderTest, elements) => {
 	const doAssertion = (element) => {

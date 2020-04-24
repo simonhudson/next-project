@@ -4,7 +4,7 @@ import React from 'react';
 import { expect } from 'chai';
 import Icon from './index';
 const cloneDeep = require('lodash/cloneDeep');
-import { assertElementExists, assertElementDoesNotExist, mountWithTheme } from '$/tests/utilities';
+import { assertElementExists, assertElementDoesNotExist, mountWithTheme } from '~/config/tests/utilities';
 
 const baseProps = {
 	type: 'bars',

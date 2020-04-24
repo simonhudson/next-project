@@ -4,7 +4,7 @@ import React from 'react';
 // import { expect } from 'chai';
 import Hero from './index';
 const cloneDeep = require('lodash/cloneDeep');
-import { assertElementExists, mountWithTheme } from '$/tests/utilities';
+import { assertElementExists, mountWithTheme } from '~/config/tests/utilities';
 
 const baseProps = {
 	page: 'about',

@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react';
-import Icon from '~/icon';
+import Icon from '~/components/icon';
 import { ToggleButton } from './toggle.styles';
 
 const MainNavigationToggle = (props) => {

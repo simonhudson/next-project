@@ -3,9 +3,9 @@
 import React from 'react';
 import Head from 'next/head';
 import { ThemeProvider } from 'styled-components';
-import Theme from '&/theme';
-import SiteHeader from '~/site-header';
-import Hero from '~/hero';
+import Theme from '~/theme';
+import SiteHeader from '~/components/site-header';
+import Hero from '~/components/hero';
 import '&/css/main.scss';
 
 const App = ({ Component, pageProps }) => {

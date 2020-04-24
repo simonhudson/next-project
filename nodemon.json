@@ -2,9 +2,9 @@
 	"restartable": "rs",
 	"verbose": false,
 	"watch": [
-		"components/",
 		"pages/",
-        "public/"
+		"public/",
+		"src/"
 	],
 	"ext": "js css scss json"
 }
