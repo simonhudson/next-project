@@ -5,19 +5,20 @@ const COMMON_OPTIONS = {
 	mode: 'cors',
 };
 
-const makeRequest = (endpoint, method) => {
+async function makeRequest(endpoint, method) {
 	if (!endpoint || !method) return null;
 	const options = { ...COMMON_OPTIONS, method };
-	return new Promise((resolve, reject) => {
-		fetch(`${process.env.API_URL}/${endpoint}`, options)
-			.then((response) => response.json())
-			.then((data) => resolve(data))
-			.catch((error) => reject(error));
-	});
-};
+	try {
+		const res = await fetch(`${process.env.API_URL}/${endpoint}`, options);
+		const responseJson = await res.json();
+		return responseJson;
+	} catch (err) {
+		console.log(`/${endpoint}: fetch() failed`, err);
+	}
+}
 
-export function get(endpoint) {
-	return makeRequest(endpoint, 'GET');
+export async function get(endpoint) {
+	return await makeRequest(endpoint, 'GET');
 }
 export function post(endpoint) {
 	return makeRequest(endpoint, 'POST');
