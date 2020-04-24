@@ -12,6 +12,7 @@
     "test": "jest --colors"
   },
   "dependencies": {
+    "husky": "^4.2.5",
     "next": "9.3.5",
     "next-images": "^1.4.0",
     "node-fetch": "^2.6.0",
@@ -55,6 +56,12 @@
     ],
     "moduleNameMapper": {
       "\\.(css|less|sass|scss|svg)$": "<rootDir>src/config/tests/mocks/style.js"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm test"
     }
   }
 }
