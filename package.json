@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "nodemon --exec \"next dev\"",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "npm run build",
     "lint": "eslint ./**/**.js",
     "lint:fix": "eslint ./**/**.js --fix",
     "test": "jest --colors"
