@@ -9,7 +9,13 @@
     "heroku-postbuild": "npm run build",
     "lint": "eslint ./**/**.js",
     "lint:fix": "eslint ./**/**.js --fix",
-    "test": "jest --colors"
+    "test": "jest --colors",
+    "cypress": "./node_modules/.bin/cypress run",
+    "cypress:open": "./node_modules/.bin/cypress open",
+    "cypress:chrome": "./node_modules/.bin/cypress run -b chrome",
+    "cypress:edge": "./node_modules/.bin/cypress run -b C:\\Windows\\SystemApps\\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\\MicrosoftEdge.exe",
+    "cypress:firefox": "./node_modules/.bin/cypress run -b firefox",
+    "cypress:ie": "./node_modules/.bin/cypress run -b \"C:\\Program Files\\internet explorer\\iexplore.exe\""
   },
   "dependencies": {
     "dotenv": "^8.2.0",
@@ -34,6 +40,7 @@
     "babel-plugin-root-import": "^6.5.0",
     "babel-plugin-styled-components": "^1.10.7",
     "chai": "^4.2.0",
+    "cypress": "^4.4.1",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "eslint": "^6.8.0",

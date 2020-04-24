@@ -10,7 +10,7 @@ const Wrapper = styled.nav`
 	background: #eee;
 	height: 100vh;
 	position: absolute;
-	left: -75%;
+	left: -100vw;
 	top: 0;
 	width: 75%;
 	z-index: 3;

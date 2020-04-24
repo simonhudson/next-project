@@ -6,6 +6,7 @@ import { ThemeProvider } from 'styled-components';
 import Theme from '~/theme';
 import SiteHeader from '~/components/site-header';
 import Hero from '~/components/hero';
+import SiteFooter from '~/components/site-footer';
 import '&/css/main.scss';
 
 const App = ({ Component, pageProps }) => {
@@ -18,6 +19,7 @@ const App = ({ Component, pageProps }) => {
 				<SiteHeader {...pageProps} theme={Theme} />
 				<Hero />
 				<Component {...pageProps} theme={Theme} />
+				<SiteFooter />
 			</ThemeProvider>
 		</>
 	);

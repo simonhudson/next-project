@@ -25,6 +25,10 @@
                     {
                         "rootPathPrefix": "&",
                         "rootPathSuffix": "public"
+                    },
+                    {
+                        "rootPathPrefix": "$",
+                        "rootPathSuffix": "cypress"
                     }
                 ]
             }
