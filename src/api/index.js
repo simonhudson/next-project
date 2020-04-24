@@ -6,14 +6,20 @@ const COMMON_OPTIONS = {
 };
 
 async function makeRequest(endpoint, method) {
+	const responseObj = {
+		data: null,
+		err: null,
+	};
 	if (!endpoint || !method) return null;
 	const options = { ...COMMON_OPTIONS, method };
 	try {
 		const res = await fetch(`${process.env.API_URL}/${endpoint}`, options);
 		const responseJson = await res.json();
-		return responseJson;
+		responseObj.data = responseJson;
+		return responseObj;
 	} catch (err) {
-		console.log(`/${endpoint}: fetch() failed`, err);
+		responseObj.err = err;
+		return responseObj;
 	}
 }
 

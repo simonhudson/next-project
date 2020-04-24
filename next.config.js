@@ -13,4 +13,12 @@ const setEnvVars = () => {
 
 module.exports = {
 	env: setEnvVars(),
+	webpack(config) {
+		config.module.rules.push({
+			test: /\.(jpe?g|png|gif|svg)$/i,
+			use: ['url-loader?limit=10000', 'img-loader'],
+		});
+
+		return config;
+	},
 };
