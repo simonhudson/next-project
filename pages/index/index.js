@@ -2,11 +2,12 @@
 
 import React from 'react';
 import People from '~/components/people';
+import { H1 } from '~/theme/typography';
 
 const Home = () => {
 	return (
 		<>
-			<h1>Home page</h1>
+			<H1>Home page</H1>
 			<People />
 		</>
 	);

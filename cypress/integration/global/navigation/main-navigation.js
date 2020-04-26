@@ -11,6 +11,8 @@ beforeEach(() => {
 
 const navigationIsNotInView = (device) => {
 	cy.wait(500)
+		.get(mainNavigation.overlay)
+		.should('not.be.visible')
 		.get(mainNavigation.root)
 		.then((element) => {
 			const rect = element[0].getBoundingClientRect();
@@ -21,6 +23,8 @@ const navigationIsNotInView = (device) => {
 
 const navigationIsInView = () => {
 	cy.wait(500)
+		.get(mainNavigation.overlay)
+		.should('be.visible')
 		.get(mainNavigation.root)
 		.then((element) => {
 			const rect = element[0].getBoundingClientRect();
@@ -72,7 +76,7 @@ describe('Main navigation', () => {
 			beforeEach(() => cy.setTablet(true));
 
 			it('should show navigation on load', () => {
-				cy.get(mainNavigation.root).should('be.visible');
+				cy.get(mainNavigation.root).should('be.visible').get(mainNavigation.overlay).should('not.be.visible');
 			});
 
 			it('should hide toggle on load', () => {
@@ -84,7 +88,7 @@ describe('Main navigation', () => {
 		beforeEach(() => cy.setDesktop());
 
 		it('should show navigation on load', () => {
-			cy.get(mainNavigation.root).should('be.visible');
+			cy.get(mainNavigation.root).should('be.visible').get(mainNavigation.overlay).should('not.be.visible');
 		});
 
 		it('should hide toggle on load', () => {
