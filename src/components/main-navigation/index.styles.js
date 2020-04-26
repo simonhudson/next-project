@@ -7,7 +7,6 @@ const Wrapper = styled.nav`
 	${({ theme }) => theme.animation.defaults}
 	background: #fff;
 	box-shadow: 0 0 ${rem(10)} ${({ theme }) => theme.palette.primary.bodyText};
-	background: #eee;
 	height: 100vh;
 	position: absolute;
 	left: -100vw;

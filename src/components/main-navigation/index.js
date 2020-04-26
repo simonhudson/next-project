@@ -17,17 +17,20 @@ class MainNavigation extends Component {
 
 	componentDidMount = () => {};
 
-	toggleMainNavigation = (e) => {
+	toggle = (e) => {
 		e.preventDefault ? e.preventDefault() : (e.returnValue = false);
 		this.setState({ toggleClicked: true });
 		const currentState = this.state.isVisible;
 		this.setState({ isVisible: !currentState });
 	};
 
+	open = () => this.setState({ isVisible: true });
+	close = () => this.setState({ isVisible: false });
+
 	render = () => {
 		return (
 			<>
-				<MainNavigationToggle onClick={this.toggleMainNavigation} navigationIsVisible={this.state.isVisible} />
+				<MainNavigationToggle onClick={this.toggle} navigationIsVisible={this.state.isVisible} />
 				{this.state.isVisible && <Overlay />}
 				<Wrapper
 					isVisible={this.state.isVisible}
@@ -39,7 +42,9 @@ class MainNavigation extends Component {
 							return (
 								<Item key={index}>
 									<Link href={item.href}>
-										<ItemLink href={item.href}>{item.label}</ItemLink>
+										<ItemLink onClick={this.close} href={item.href}>
+											{item.label}
+										</ItemLink>
 									</Link>
 								</Item>
 							);
