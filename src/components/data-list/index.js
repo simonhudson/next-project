@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import { get } from '~/api';
 import Loading from '~/components/loading';
 
-class People extends Component {
+class DataList extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -18,7 +18,7 @@ class People extends Component {
 
 	componentDidMount = async () => {
 		this.setState({ isLoading: true });
-		const data = await get('people');
+		const data = await get(this.props.endpoint);
 		if (data.data) this.setState({ data: { results: data.data.results }, isLoading: false });
 		if (data.err) this.setState({ err: data.err, isLoading: false });
 	};
@@ -26,7 +26,6 @@ class People extends Component {
 	render = () => {
 		return (
 			<>
-				<h2>People</h2>
 				{this.state.isLoading && <Loading />}
 				{this.state.err && !this.state.isLoading && <p>Data could not be loaded</p>}
 				{!this.state.err && !this.state.isLoading && this.state.data.results && this.state.data.results.length && (
@@ -41,4 +40,4 @@ class People extends Component {
 	};
 }
 
-export default People;
+export default DataList;

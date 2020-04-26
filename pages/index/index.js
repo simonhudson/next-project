@@ -1,15 +1,16 @@
 'use strict';
 
 import React from 'react';
-import People from '~/components/people';
+import DataList from '~/components/data-list';
 import { H1 } from '~/theme/typography';
+import { Wrap } from '~theme/layout';
 
 const Home = () => {
 	return (
-		<>
+		<Wrap>
 			<H1>Home page</H1>
-			<People />
-		</>
+			<DataList endpoint="people" />
+		</Wrap>
 	);
 };
 
