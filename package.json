@@ -68,7 +68,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint",
-      "pre-push": "npm test && npm run cypress"
+      "pre-push": "npm test"
     }
   }
 }
