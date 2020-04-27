@@ -7,7 +7,7 @@ import { Header } from './index.styles';
 const SiteHeader = (props) => {
 	return (
 		<Header {...props}>
-			<MainNavigation currentPage="home" />
+			<MainNavigation {...props} />
 		</Header>
 	);
 };

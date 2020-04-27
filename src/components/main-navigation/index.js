@@ -20,8 +20,6 @@ class MainNavigation extends Component {
 
 	getCurrentUrl = () => {};
 
-	setCurrentPage = () => {};
-
 	toggle = (e) => {
 		e.preventDefault ? e.preventDefault() : (e.returnValue = false);
 		this.setState({ toggleClicked: true });
@@ -46,7 +44,11 @@ class MainNavigation extends Component {
 							return (
 								<Item key={index}>
 									<Link href={item.href}>
-										<ItemLink onClick={this.close} href={item.href}>
+										<ItemLink
+											onClick={this.close}
+											href={item.href}
+											isCurrentPage={this.props.currentPage.route === item.href}
+										>
 											{item.label}
 										</ItemLink>
 									</Link>

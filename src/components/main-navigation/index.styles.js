@@ -106,6 +106,18 @@ const ItemLink = styled.a`
 			border: 0;
 			`
 		)};
+
+	${(props) =>
+		props.isCurrentPage &&
+		css`
+			${({ theme }) =>
+				theme.media(
+					'tablet-l',
+					`
+				border-bottom: ${rem(5)} solid ${theme.palette.primary.bodyText};
+				`
+				)};
+		`};
 `;
 
 export { Wrapper, Overlay, List, Item, ItemLink };
