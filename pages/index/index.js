@@ -29,7 +29,7 @@ const Home = () => {
 				et sapien ultricies, blandit lectus eleifend, laoreet magna. Integer at velit et justo cursus dapibus.
 				Sed est lorem, interdum ut ornare ac, tristique id augue.
 			</p>
-			<DataList endpoint="people" />
+			<DataList endpoint="users" />
 		</Wrap>
 	);
 };
