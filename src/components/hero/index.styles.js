@@ -15,8 +15,6 @@ const Wrapper = styled.div`
 		)};
 `;
 
-const Inner = styled.div``;
-
 const Title = styled.p``;
 
-export { Wrapper, Inner, Title };
+export { Wrapper, Title };

@@ -1,7 +1,8 @@
 'use strict';
 
 import React from 'react';
-import { Wrapper, Inner, Title } from './index.styles';
+import { Wrapper, Title } from './index.styles';
+import { Wrap } from '~/theme/layout';
 
 // const CONFIG = {
 // 	home: {
@@ -18,9 +19,9 @@ const Hero = (props) => {
 
 	return (
 		<Wrapper data-test="hero">
-			<Inner>
+			<Wrap>
 				<Title data-test="hero__title">Foo</Title>
-			</Inner>
+			</Wrap>
 		</Wrapper>
 	);
 };
