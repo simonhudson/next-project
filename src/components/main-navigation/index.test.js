@@ -1,8 +1,15 @@
 'use strict';
 
 import React from 'react';
+import cloneDeep from 'lodash/cloneDeep';
 import MainNavigation from './index';
 import { assertElementExists, mountWithTheme } from '~/config/tests/utilities';
+
+const baseProps = {
+	currentPage: {
+		route: '/',
+	},
+};
 
 describe('MainNavigation', () => {
 	let objectUnderTest;
@@ -11,9 +18,10 @@ describe('MainNavigation', () => {
 	afterEach(() => (!!objectUnderTest ? objectUnderTest.unmount() : null));
 
 	it('should render as expected', () => {
-		initialise();
+		const props = cloneDeep(baseProps);
+		initialise(props);
 		assertElementExists(objectUnderTest, selector);
 	});
 
-	const initialise = (props) => (objectUnderTest = mountWithTheme(<MainNavigation />));
+	const initialise = (props) => (objectUnderTest = mountWithTheme(<MainNavigation {...props} />));
 });
