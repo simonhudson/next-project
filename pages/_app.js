@@ -23,8 +23,10 @@ const App = ({ Component, pageProps }) => {
 			</Head>
 			<ThemeProvider theme={Theme}>
 				<SiteHeader {...pageProps} theme={Theme} />
-				<Hero />
-				<Component {...pageProps} theme={Theme} />
+				<main>
+					<Hero />
+					<Component {...pageProps} theme={Theme} />
+				</main>
 				<SiteFooter />
 			</ThemeProvider>
 		</>
