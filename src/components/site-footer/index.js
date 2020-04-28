@@ -1,15 +1,18 @@
 'use strict';
 
 import React from 'react';
-import { Wrap, Text } from './index.styles';
+import { Wrapper, Text } from './index.styles';
+import { Wrap } from '~/theme/layout';
 
 const SiteFooter = () => {
 	const currentYear = new Date().getFullYear();
 
 	return (
-		<Wrap data-test="footer">
-			<Text data-test="footer__copyright">Copyright {currentYear}</Text>
-		</Wrap>
+		<Wrapper data-test="footer">
+			<Wrap>
+				<Text data-test="footer__copyright">Copyright {currentYear}</Text>
+			</Wrap>
+		</Wrapper>
 	);
 };
 

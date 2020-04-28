@@ -3,7 +3,7 @@
 import React from 'react';
 import DataList from '~/components/data-list';
 import { H1 } from '~/theme/typography';
-import { Wrap } from '~theme/layout';
+import { Wrap } from '~/theme/layout';
 
 const Home = () => {
 	return (

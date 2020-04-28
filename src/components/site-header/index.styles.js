@@ -13,7 +13,7 @@ const Header = styled.header`
 			'tablet-l',
 			`
 			justify-content: space-between;
-			padding: ${rem(20)};
+			padding: 0 ${rem(20)};
 			`
 		)};
 

@@ -3,8 +3,9 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
 import MainNavigationToggle from './toggle';
-import data from './data';
+import paths from '~/config/paths';
 import { Wrapper, Overlay, List, Item, ItemLink } from './index.styles';
+import { Wrap } from '~/theme/layout';
 
 class MainNavigation extends Component {
 	constructor(props) {
@@ -39,23 +40,25 @@ class MainNavigation extends Component {
 					toggleClicked={this.state.toggleClicked}
 					data-test="main-navigation"
 				>
-					<List>
-						{data.map((item, index) => {
-							return (
-								<Item key={index}>
-									<Link href={item.href}>
-										<ItemLink
-											onClick={this.close}
-											href={item.href}
-											isCurrentPage={this.props.currentPage.route === item.href}
-										>
-											{item.label}
-										</ItemLink>
-									</Link>
-								</Item>
-							);
-						})}
-					</List>
+					<Wrap>
+						<List>
+							{paths.map((item, index) => {
+								return (
+									<Item key={index}>
+										<Link href={item.href}>
+											<ItemLink
+												onClick={this.close}
+												href={item.href}
+												isCurrentPage={this.props.currentPage.route === item.href}
+											>
+												{item.label}
+											</ItemLink>
+										</Link>
+									</Item>
+								);
+							})}
+						</List>
+					</Wrap>
 				</Wrapper>
 			</>
 		);

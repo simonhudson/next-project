@@ -104,6 +104,7 @@ const ItemLink = styled.a`
 			'tablet-l',
 			`
 			border: 0;
+			padding: ${rem(30)} ${rem(20)};
 			`
 		)};
 
@@ -114,7 +115,7 @@ const ItemLink = styled.a`
 				theme.media(
 					'tablet-l',
 					`
-				border-bottom: ${rem(5)} solid ${theme.palette.primary.bodyText};
+				border-bottom: ${rem(1)} solid ${theme.palette.primary.b};
 				`
 				)};
 		`};
