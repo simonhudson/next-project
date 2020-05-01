@@ -17,6 +17,9 @@ const CONFIG = {
 	_error: {
 		title: 'Sorry, something has gone wrong.',
 	},
+	'404': {
+		title: `Sorry, we can't find that page`,
+	},
 };
 
 const Hero = (props) => {

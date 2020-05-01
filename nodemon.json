@@ -2,7 +2,6 @@
 	"restartable": "rs",
 	"verbose": false,
 	"watch": [
-		"pages/",
 		"public/",
 		"src/"
 	],
