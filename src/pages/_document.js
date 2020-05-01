@@ -11,7 +11,7 @@ class Layout extends Document {
 					<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 					<meta httpEquiv="X-UA-Compatible" content="ie=edge" />
 					<link
-						href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;display=swap"
+						href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Roboto:wght@100;300;400;500;700;900&amp;display=swap"
 						rel="stylesheet"
 					/>
 					<link

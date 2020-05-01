@@ -12,13 +12,10 @@ class MainNavigation extends Component {
 		this.state = {
 			isVisible: false,
 			toggleClicked: false,
-			currentPage: null,
 		};
 	}
 
 	componentDidMount = () => {};
-
-	getCurrentUrl = () => {};
 
 	toggle = (e) => {
 		e.preventDefault ? e.preventDefault() : (e.returnValue = false);

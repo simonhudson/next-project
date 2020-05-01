@@ -13,7 +13,7 @@ const baseProps = {
 describe('Hero', () => {
 	let objectUnderTest;
 	const selector = `div[data-test="hero"]`;
-	const title = `p[data-test="hero__title"]`;
+	const heading = `p[data-test="hero__heading"]`;
 
 	afterEach(() => (!!objectUnderTest ? objectUnderTest.unmount() : null));
 
@@ -34,7 +34,7 @@ describe('Hero', () => {
 	it('should render as expected', () => {
 		const props = cloneDeep(baseProps);
 		initialise(props);
-		assertElementExists(objectUnderTest, [selector, title]);
+		assertElementExists(objectUnderTest, [selector, heading]);
 	});
 
 	// it('should render as large hero', () => {

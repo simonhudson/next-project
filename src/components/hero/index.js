@@ -1,33 +1,36 @@
 'use strict';
 
 import React from 'react';
-import { Wrapper, Title } from './index.styles';
+import { Wrapper, Heading, SubHeading } from './index.styles';
 
 const CONFIG = {
 	home: {
-		title: 'Welcome to our site.',
+		heading: `Welcome to our site`,
 		useLargeHero: true,
 	},
 	about: {
-		title: 'About us.',
+		heading: 'About us',
 	},
 	contact: {
-		title: 'Get in touch.',
+		heading: 'Get in touch',
 	},
 	_error: {
-		title: 'Sorry, something has gone wrong.',
+		heading: 'Sorry, something has gone wrong',
 	},
 	'404': {
-		title: `Sorry, we can't find that page`,
+		heading: `Sorry, we can't find that page`,
 	},
 };
 
 const Hero = (props) => {
-	const title = CONFIG[props.currentPage.name] ? CONFIG[props.currentPage.name].title : '';
+	const config = CONFIG[props.currentPage.name];
+	const heading = config && config.heading ? config.heading : '';
+	const subHeading = config && config.subHeading ? config.subHeading : null;
 	return (
 		<Wrapper data-test="hero">
 			<props.theme.layout.Wrap>
-				<Title data-test="hero__title">{title}</Title>
+				<Heading data-test="hero__heading">{heading}</Heading>
+				{subHeading && <SubHeading>{subHeading}</SubHeading>}
 			</props.theme.layout.Wrap>
 		</Wrapper>
 	);

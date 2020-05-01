@@ -9,4 +9,11 @@ const H1 = styled.h1`
 	font-size: ${rem(28)};
 `;
 
-export { H1 };
+const H2 = styled.h2`
+	color: ${({ theme }) => theme.palette.primary.b};
+	font-family: 'Lora', georgia, 'times new roman', serif;
+	font-weight: 400;
+	font-size: ${rem(28)};
+`;
+
+export { H1, H2 };

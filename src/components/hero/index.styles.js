@@ -18,11 +18,17 @@ const Wrapper = styled.div`
 		)};
 `;
 
-const Title = styled.p`
-	color: #0f0f0f;
+const Heading = styled.p`
+	font-family: 'Lora', georgia, 'times new roman', serif;
 	font-size: ${rem(28)};
-	font-weight: 700;
+	font-weight: 500;
+	line-height: 1.2em;
 	margin: 0;
+
+	&::after {
+		content: '.';
+		color: ${({ theme }) => theme.palette.primary.b};
+	}
 
 	${({ theme }) =>
 		theme.media(
@@ -33,4 +39,19 @@ const Title = styled.p`
 		)};
 `;
 
-export { Wrapper, Title };
+const SubHeading = styled.p`
+	font-family: 'Lora', georgia, 'times new roman', serif;
+	font-size: ${rem(14)};
+	font-weight: 400;
+	line-height: 1.8em;
+
+	${({ theme }) =>
+		theme.media(
+			'tablet-l',
+			`
+			font-size: ${rem(22)};
+			`
+		)};
+`;
+
+export { Wrapper, Heading, SubHeading };

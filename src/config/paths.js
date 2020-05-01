@@ -1,5 +1,5 @@
 module.exports = [
-	{ label: 'Home', href: '/' },
-	{ label: 'About', href: '/about' },
-	{ label: 'Contact', href: '/contact' },
+	{ id: 'home', label: 'Home', href: '/' },
+	{ id: 'about', label: 'About', href: '/about' },
+	{ id: 'contact', label: 'Contact', href: '/contact' },
 ];
