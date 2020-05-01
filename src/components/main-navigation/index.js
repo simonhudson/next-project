@@ -5,7 +5,6 @@ import Link from 'next/link';
 import MainNavigationToggle from './toggle';
 import paths from '~/config/paths';
 import { Wrapper, Overlay, List, Item, ItemLink } from './index.styles';
-import { Wrap } from '~/theme/layout';
 
 class MainNavigation extends Component {
 	constructor(props) {
@@ -31,16 +30,13 @@ class MainNavigation extends Component {
 	close = () => this.setState({ isVisible: false });
 
 	render = () => {
+		const { props, state } = this;
 		return (
 			<>
-				<MainNavigationToggle onClick={this.toggle} navigationIsVisible={this.state.isVisible} />
-				{this.state.isVisible && <Overlay data-test="main-navigation__overlay" />}
-				<Wrapper
-					isVisible={this.state.isVisible}
-					toggleClicked={this.state.toggleClicked}
-					data-test="main-navigation"
-				>
-					<Wrap>
+				<MainNavigationToggle onClick={this.toggle} navigationIsVisible={state.isVisible} />
+				{state.isVisible && <Overlay data-test="main-navigation__overlay" />}
+				<Wrapper isVisible={state.isVisible} toggleClicked={state.toggleClicked} data-test="main-navigation">
+					<props.theme.layout.Wrap>
 						<List>
 							{paths.map((item, index) => {
 								return (
@@ -49,7 +45,7 @@ class MainNavigation extends Component {
 											<ItemLink
 												onClick={this.close}
 												href={item.href}
-												isCurrentPage={this.props.currentPage.route === item.href}
+												isCurrentPage={props.currentPage.route === item.href}
 											>
 												{item.label}
 											</ItemLink>
@@ -58,7 +54,7 @@ class MainNavigation extends Component {
 								);
 							})}
 						</List>
-					</Wrap>
+					</props.theme.layout.Wrap>
 				</Wrapper>
 			</>
 		);

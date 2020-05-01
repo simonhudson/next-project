@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { Wrapper, Title } from './index.styles';
-import { Wrap } from '~/theme/layout';
 
 // const CONFIG = {
 // 	home: {
@@ -19,9 +18,9 @@ const Hero = (props) => {
 
 	return (
 		<Wrapper data-test="hero">
-			<Wrap>
+			<props.theme.layout.Wrap>
 				<Title data-test="hero__title">Foo</Title>
-			</Wrap>
+			</props.theme.layout.Wrap>
 		</Wrapper>
 	);
 };

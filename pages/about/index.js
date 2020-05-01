@@ -1,14 +1,12 @@
 'use strict';
 
 import React from 'react';
-import { H1 } from '~/theme/typography';
-import { Wrap } from '~theme/layout';
 
-const About = () => {
+const About = (props) => {
 	return (
-		<Wrap>
-			<H1>About</H1>
-		</Wrap>
+		<props.theme.layout.Wrap>
+			<props.theme.typography.H1>About</props.theme.typography.H1>
+		</props.theme.layout.Wrap>
 	);
 };
 

@@ -15,4 +15,4 @@ const Wrap = styled.div`
 		)};
 `;
 
-export { Wrap };
+module.exports = { Wrap };

@@ -2,13 +2,11 @@
 
 import React from 'react';
 import DataList from '~/components/data-list';
-import { H1 } from '~/theme/typography';
-import { Wrap } from '~/theme/layout';
 
-const Home = () => {
+const Home = (props) => {
 	return (
-		<Wrap>
-			<H1>Home page</H1>
+		<props.theme.layout.Wrap>
+			<props.theme.typography.H1>Home page</props.theme.typography.H1>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum rhoncus velit nec vestibulum. Sed at
 				mauris pulvinar, dapibus sapien ac, dictum tortor. Quisque non pellentesque dui, quis sagittis ex.
@@ -30,7 +28,7 @@ const Home = () => {
 				Sed est lorem, interdum ut ornare ac, tristique id augue.
 			</p>
 			<DataList endpoint="users" />
-		</Wrap>
+		</props.theme.layout.Wrap>
 	);
 };
 

@@ -94,16 +94,17 @@ const ItemLink = styled.a`
 	border-bottom: 1px solid #ddd;
 	color: ${({ theme }) => theme.palette.primary.bodyText};
 	display: block;
+	font-weight: 500;
 	padding: ${rem(20)};
-	text-transform: uppercase;
-	font-weight: 600;
 	text-decoration: none;
+	text-transform: uppercase;
 
 	${({ theme }) =>
 		theme.media(
 			'tablet-l',
 			`
 			border: 0;
+			font-size: ${rem(14)};
 			padding: ${rem(30)} ${rem(20)};
 			`
 		)};
