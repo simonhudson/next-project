@@ -17,19 +17,18 @@ const App = ({ Component, pageProps }) => {
 		query: router.query,
 		route: router.route,
 	};
-	pageProps.theme = Theme;
 	return (
 		<>
 			<Head>
 				<title>Test Site</title>
 			</Head>
 			<ThemeProvider theme={Theme}>
-				<SiteHeader {...pageProps} />
+				<SiteHeader theme={Theme} {...pageProps} />
 				<main>
-					<Hero {...pageProps} />
-					<Component {...pageProps} />
+					<Hero theme={Theme} {...pageProps} />
+					<Component theme={Theme} {...pageProps} />
 				</main>
-				<SiteFooter {...pageProps} />
+				<SiteFooter theme={Theme} {...pageProps} />
 			</ThemeProvider>
 		</>
 	);
