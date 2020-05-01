@@ -5,7 +5,7 @@ import { rem } from 'polished';
 
 const Wrapper = styled.div`
 	align-items: center;
-	background: #eee;
+	background: #fff;
 	display: flex;
 	height: 150px;
 	margin-bottom: ${rem(20)};
@@ -21,6 +21,7 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.p`
+	color: #0f0f0f;
 	font-size: ${rem(28)};
 	font-weight: 700;
 	margin: 0;
