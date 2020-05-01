@@ -8,14 +8,12 @@ const Wrapper = styled.div`
 	background: #fff;
 	display: flex;
 	height: 150px;
-	margin-bottom: ${rem(20)};
 
 	${({ theme }) =>
 		theme.media(
 			'tablet-l',
 			`
 			height: 250px;
-			margin-bottom: ${rem(40)};
 			`
 		)};
 `;
