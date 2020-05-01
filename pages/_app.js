@@ -13,6 +13,7 @@ import '&/css/main.scss';
 const App = ({ Component, pageProps }) => {
 	const router = useRouter();
 	pageProps.currentPage = {
+		name: router.route === '/' ? 'home' : router.route.split('/')[1],
 		query: router.query,
 		route: router.route,
 	};

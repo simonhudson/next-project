@@ -10,7 +10,7 @@ const Wrap = styled.div`
 		theme.media(
 			'tablet-l',
 			`
-			width: 1016px;
+			width: 984px;
 			`
 		)};
 `;

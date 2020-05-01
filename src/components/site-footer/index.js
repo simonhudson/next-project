@@ -7,11 +7,11 @@ const SiteFooter = (props) => {
 	const currentYear = new Date().getFullYear();
 
 	return (
-		<Wrapper data-test="footer">
-			<props.theme.layout.Wrap>
+		<props.theme.layout.Wrap>
+			<Wrapper data-test="footer">
 				<Text data-test="footer__copyright">Copyright {currentYear}</Text>
-			</props.theme.layout.Wrap>
-		</Wrapper>
+			</Wrapper>
+		</props.theme.layout.Wrap>
 	);
 };
 

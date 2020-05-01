@@ -6,7 +6,6 @@ import DataList from '~/components/data-list';
 const Home = (props) => {
 	return (
 		<props.theme.layout.Wrap>
-			<props.theme.typography.H1>Home page</props.theme.typography.H1>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum rhoncus velit nec vestibulum. Sed at
 				mauris pulvinar, dapibus sapien ac, dictum tortor. Quisque non pellentesque dui, quis sagittis ex.
