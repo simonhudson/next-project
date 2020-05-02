@@ -18,8 +18,8 @@ const assertElementExists = (objectUnderTest, elements) => {
 
 const assertElementDoesNotExist = (objectUnderTest, elements) => {
 	const doAssertion = (element) => {
-		expect(objectUnderTest.exists(elements)).to.be.false;
-		expect(objectUnderTest.find(elements).length).to.equal(0);
+		expect(objectUnderTest.exists(element)).to.be.false;
+		expect(objectUnderTest.find(element).length).to.equal(0);
 	};
 
 	if (Array.isArray(elements)) elements.forEach((element) => doAssertion(element));

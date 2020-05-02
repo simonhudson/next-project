@@ -7,7 +7,7 @@ import { layout } from '~/theme';
 const CONFIG = {
 	home: {
 		heading: `Welcome to our site`,
-		useLargeHero: true,
+		subHeading: `This is a hero sub heading`,
 	},
 	about: {
 		heading: 'About us',
@@ -25,13 +25,14 @@ const CONFIG = {
 
 const Hero = (props) => {
 	const config = CONFIG[props.currentPage.name];
+	if (!config) return null;
 	const heading = config && config.heading ? config.heading : '';
 	const subHeading = config && config.subHeading ? config.subHeading : null;
 	return (
 		<Wrapper data-test="hero">
 			<layout.Wrap>
 				<Heading data-test="hero__heading">{heading}</Heading>
-				{subHeading && <SubHeading>{subHeading}</SubHeading>}
+				{subHeading && <SubHeading data-test="hero__sub-heading">{subHeading}</SubHeading>}
 			</layout.Wrap>
 		</Wrapper>
 	);
