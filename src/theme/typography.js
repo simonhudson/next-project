@@ -14,6 +14,7 @@ const H1 = (props) => {
 		font-family: 'Lora', sans-serif;
 		font-weight: 400;
 		font-size: ${rem(28)};
+		margin-bottom: 1rem;
 	`;
 
 	return <StyledH1>{props.children}</StyledH1>;
@@ -24,8 +25,9 @@ const H2 = (props) => {
 
 	const StyledH2 = styled[element]`
 		color: ${({ theme }) => theme.palette.primary.bodyText};
-		font-weight: 500;
+		font-weight: 400;
 		font-size: ${rem(18)};
+		margin-bottom: 1rem;
 	`;
 
 	return <StyledH2>{props.children}</StyledH2>;
