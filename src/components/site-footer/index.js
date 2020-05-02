@@ -4,6 +4,9 @@ import React from 'react';
 import { Wrapper, Text } from './index.styles';
 
 const SiteFooter = (props) => {
+	console.log('props---------------');
+	console.log(props);
+	console.log('/props---------------');
 	const currentYear = new Date().getFullYear();
 
 	return (
