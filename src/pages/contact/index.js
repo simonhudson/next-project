@@ -1,9 +1,10 @@
 'use strict';
 
 import React from 'react';
+import { layout } from '~/theme';
 
 const Contact = (props) => {
-	return <props.theme.layout.Wrap></props.theme.layout.Wrap>;
+	return <layout.Wrap></layout.Wrap>;
 };
 
 export default Contact;

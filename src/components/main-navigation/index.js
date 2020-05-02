@@ -5,6 +5,7 @@ import Link from 'next/link';
 import MainNavigationToggle from './toggle';
 import paths from '~/config/paths';
 import { Wrapper, Overlay, List, Item, ItemLink } from './index.styles';
+import { layout } from '~/theme';
 
 class MainNavigation extends Component {
 	constructor(props) {
@@ -41,7 +42,7 @@ class MainNavigation extends Component {
 				<MainNavigationToggle onClick={this.toggle} navigationIsVisible={state.isVisible} />
 				{state.isVisible && <Overlay data-test="main-navigation__overlay" />}
 				<Wrapper isVisible={state.isVisible} toggleClicked={state.toggleClicked} data-test="main-navigation">
-					<props.theme.layout.Wrap>
+					<layout.Wrap>
 						<List>
 							{paths.map((item, index) => {
 								return (
@@ -59,7 +60,7 @@ class MainNavigation extends Component {
 								);
 							})}
 						</List>
-					</props.theme.layout.Wrap>
+					</layout.Wrap>
 				</Wrapper>
 			</>
 		);

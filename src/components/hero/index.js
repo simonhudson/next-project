@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Wrapper, Heading, SubHeading } from './index.styles';
+import { layout } from '~/theme';
 
 const CONFIG = {
 	home: {
@@ -28,10 +29,10 @@ const Hero = (props) => {
 	const subHeading = config && config.subHeading ? config.subHeading : null;
 	return (
 		<Wrapper data-test="hero">
-			<props.theme.layout.Wrap>
+			<layout.Wrap>
 				<Heading data-test="hero__heading">{heading}</Heading>
 				{subHeading && <SubHeading>{subHeading}</SubHeading>}
-			</props.theme.layout.Wrap>
+			</layout.Wrap>
 		</Wrapper>
 	);
 };

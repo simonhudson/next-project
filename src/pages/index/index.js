@@ -2,10 +2,11 @@
 
 import React from 'react';
 import DataList from '~/components/data-list';
+import { layout } from '~/theme';
 
 const Home = (props) => {
 	return (
-		<props.theme.layout.Wrap>
+		<layout.Wrap>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum rhoncus velit nec vestibulum. Sed at
 				mauris pulvinar, dapibus sapien ac, dictum tortor. Quisque non pellentesque dui, quis sagittis ex.
@@ -27,7 +28,7 @@ const Home = (props) => {
 				Sed est lorem, interdum ut ornare ac, tristique id augue.
 			</p>
 			<DataList endpoint="users" />
-		</props.theme.layout.Wrap>
+		</layout.Wrap>
 	);
 };
 

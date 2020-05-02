@@ -16,7 +16,6 @@ const App = ({ Component, pageProps }) => {
 		query: router.query,
 		route: router.route,
 	};
-	pageProps.theme = Theme;
 
 	return (
 		<>
