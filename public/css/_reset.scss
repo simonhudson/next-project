@@ -15,6 +15,10 @@ html {
     position: relative;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 p {
     line-height: 1.8rem;
     margin-bottom: 2rem;

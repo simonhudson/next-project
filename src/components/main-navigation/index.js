@@ -21,6 +21,14 @@ class MainNavigation extends Component {
 		e.preventDefault ? e.preventDefault() : (e.returnValue = false);
 		this.setState({ toggleClicked: true });
 		this.state.isVisible ? this.close() : this.open();
+		this.toggleScroll();
+	};
+
+	toggleScroll = () => {
+		const body = document.querySelector('body');
+		const NO_SCROLL_CLASS = 'no-scroll';
+		const method = this.state.isVisible ? 'remove' : 'add';
+		body.classList[method](NO_SCROLL_CLASS);
 	};
 
 	open = () => this.setState({ isVisible: true });
