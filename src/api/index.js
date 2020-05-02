@@ -30,12 +30,12 @@ async function makeRequest(endpoint, method) {
 export async function get(endpoint) {
 	return await makeRequest(endpoint, 'GET');
 }
-export function post(endpoint) {
-	return makeRequest(endpoint, 'POST');
+export async function post(endpoint) {
+	return await makeRequest(endpoint, 'POST');
 }
-export function put(endpoint) {
-	return makeRequest(endpoint, 'PUT');
+export async function put(endpoint) {
+	return await makeRequest(endpoint, 'PUT');
 }
-export function patch(endpoint) {
-	return makeRequest(endpoint, 'PATCH');
+export async function patch(endpoint) {
+	return await makeRequest(endpoint, 'PATCH');
 }
