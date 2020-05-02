@@ -7,7 +7,11 @@ const cloneDeep = require('lodash/cloneDeep');
 import { assertElementExists, mountWithTheme } from '~/config/tests/utilities';
 
 const baseProps = {
-	page: 'about',
+	currentPage: {
+		id: 'about',
+		name: 'about',
+		href: '/about',
+	},
 };
 
 describe('Hero', () => {
