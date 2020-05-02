@@ -18,6 +18,7 @@ class Layout extends Document {
 						href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 						rel="stylesheet"
 					/>
+					<link href="/css/reset.css" rel="stylesheet" />
 				</Head>
 				<body>
 					<Main />
