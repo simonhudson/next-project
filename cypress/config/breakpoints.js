@@ -1,16 +1,18 @@
 'use strict';
 
+import breakpoints from '../../src/theme/breakpoints';
+
 module.exports = {
 	phone: {
-		width: 420,
-		height: 736,
+		width: breakpoints['phone-p'],
+		height: breakpoints['tablet-p'],
 	},
 	tablet: {
-		width: 768,
-		height: 1024,
+		width: breakpoints['tablet-p'],
+		height: breakpoints['tablet-l'],
 	},
 	desktop: {
-		width: 1200,
-		height: 900,
+		width: breakpoints.desktop,
+		height: breakpoints['tablet-l'],
 	},
 };

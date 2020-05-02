@@ -6,8 +6,8 @@ module.exports = {
 	font: require('./font'),
 	layout: require('./layout'),
 	media: require('./media'),
-	palette: require('./palette'),
 	paths: require('./paths'),
-	typography: require('./typography'),
+	palette: require('./palette'),
 	spacing: require('./spacing'),
+	typography: require('./typography'),
 };

@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
 import MainNavigationToggle from './toggle';
-import paths from '~/config/paths';
+import routes from '~/config/routes';
 import { Wrapper, Overlay, List, Item, ItemLink } from './index.styles';
 import { layout } from '~/theme';
 
@@ -44,7 +44,7 @@ class MainNavigation extends Component {
 				<Wrapper isVisible={state.isVisible} toggleClicked={state.toggleClicked} data-test="main-navigation">
 					<layout.Wrap>
 						<List>
-							{paths.map((item, index) => {
+							{routes.map((item, index) => {
 								return (
 									<Item key={index}>
 										<Link href={item.href}>
