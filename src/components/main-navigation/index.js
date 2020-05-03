@@ -45,6 +45,7 @@ class MainNavigation extends Component {
 					<layout.Wrap>
 						<List>
 							{routes.map((item, index) => {
+								if (item.omitFromNavigation) return null;
 								return (
 									<Item key={index}>
 										<Link href={item.href}>

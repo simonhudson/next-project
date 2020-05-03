@@ -1,0 +1,7 @@
+{
+  "generator-next-app": {
+    "projectName": "Next Project",
+    "projectNameSlug": "next-project",
+    "copyUtilities": "y"
+  }
+}

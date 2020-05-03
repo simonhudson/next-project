@@ -1,7 +1,6 @@
 {
   "name": "next-project",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "dev": "nodemon --exec \"next dev\"",
     "build": "next build",
@@ -20,6 +19,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "dotenv": "^8.2.0",
+    "ejs": "^2.7.4",
     "husky": "^4.2.5",
     "next": "9.3.5",
     "next-images": "^1.4.0",

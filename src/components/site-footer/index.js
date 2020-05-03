@@ -10,7 +10,7 @@ const SiteFooter = (props) => {
 	return (
 		<layout.Wrap>
 			<Wrapper data-test="footer">
-				<Text data-test="footer__copyright">Copyright {currentYear}</Text>
+				<Text data-test="footer__copyright">Copyright {currentYear} Next Project</Text>
 			</Wrapper>
 		</layout.Wrap>
 	);

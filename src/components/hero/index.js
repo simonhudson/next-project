@@ -6,7 +6,7 @@ import { layout } from '~/theme';
 
 const CONFIG = {
 	home: {
-		heading: `Welcome to our site`,
+		heading: `Welcome to Next Project`,
 		subHeading: `This is a hero sub heading`,
 	},
 	about: {
