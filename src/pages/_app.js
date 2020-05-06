@@ -11,7 +11,7 @@ import SiteFooter from '~/components/site-footer';
 import routes from '~/config/routes';
 
 // Log accessibility issues to console in non-production environments
-if (process.env.NODE_ENV !== 'production' && typeof window !== 'undefined') {
+if (process.env.APP_ENV !== 'production' && typeof window !== 'undefined') {
 	const ReactDOM = require('react-dom');
 	const axe = require('react-axe');
 	axe(React, ReactDOM, 1000);
