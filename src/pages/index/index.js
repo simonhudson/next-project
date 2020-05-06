@@ -10,7 +10,7 @@ const Home = (props) => {
 			<typography.H1>Heading 1</typography.H1>
 			<p>This page has been rendered on the server. You can turn JavaScript off and it will still be visible</p>
 			<p>The content below has been rendered on the client</p>
-			<DataList endpoint="people" />
+			<DataList endpoint="users" />
 		</layout.Wrap>
 	);
 };

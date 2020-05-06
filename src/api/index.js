@@ -8,18 +8,20 @@ const COMMON_OPTIONS = {
 };
 
 async function makeRequest(endpoint, method) {
-	const responseObj = {
-		data: null,
+	let responseObj = {
 		err: null,
 	};
 	if (!endpoint || !method) return null;
 	const options = { ...COMMON_OPTIONS, method };
 	try {
 		const res = await axios[method.toLowerCase()](`${process.env.API_URL}/${endpoint}`, options);
-		responseObj.data = {
-			results: res.data,
-			headers: res.headers,
-		};
+		console.log('---------------');
+		console.log(res);
+		console.log('---------------');
+		responseObj = { ...responseObj, ...res };
+		console.log('---------------');
+		console.log(responseObj);
+		console.log('x---------------');
 		return responseObj;
 	} catch (err) {
 		responseObj.err = err;

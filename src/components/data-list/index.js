@@ -19,7 +19,7 @@ class DataList extends Component {
 	componentDidMount = async () => {
 		this.setState({ isLoading: true });
 		const data = await get(this.props.endpoint);
-		if (data.data) this.setState({ data: { results: data.data.results.results }, isLoading: false });
+		if (data.data) this.setState({ data: { results: data.data.data }, isLoading: false });
 		if (data.err) this.setState({ err: data.err, isLoading: false });
 	};
 
@@ -31,7 +31,9 @@ class DataList extends Component {
 				{!this.state.err && !this.state.isLoading && this.state.data.results && this.state.data.results.length && (
 					<ul>
 						{this.state.data.results.map((item, index) => (
-							<li key={index}>{item.name}</li>
+							<li key={index}>
+								{item.first_name} {item.last_name}
+							</li>
 						))}
 					</ul>
 				)}
