@@ -13,7 +13,8 @@
     "cypress:chrome": "./node_modules/.bin/cypress run -b chrome",
     "cypress:edge": "./node_modules/.bin/cypress run -b C:\\Windows\\SystemApps\\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\\MicrosoftEdge.exe",
     "cypress:firefox": "./node_modules/.bin/cypress run -b firefox",
-    "cypress:ie": "./node_modules/.bin/cypress run -b \"C:\\Program Files\\internet explorer\\iexplore.exe\""
+    "cypress:ie": "./node_modules/.bin/cypress run -b \"C:\\Program Files\\internet explorer\\iexplore.exe\"",
+    "a11y": "axe.js"
   },
   "dependencies": {
     "axios": "^0.19.2",
@@ -55,7 +56,8 @@
     "img-loader": "^3.0.1",
     "jest": "^25.4.0",
     "nodemon": "^2.0.3",
-    "prettier": "^2.0.4"
+    "prettier": "^2.0.4",
+    "react-axe": "^3.4.1"
   },
   "jest": {
     "setupFilesAfterEnv": [
