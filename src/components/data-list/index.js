@@ -19,7 +19,7 @@ class DataList extends Component {
 	componentDidMount = async () => {
 		this.setState({ isLoading: true });
 		const data = await get(this.props.endpoint);
-		if (data.data) this.setState({ data: { results: data.data.results }, isLoading: false });
+		if (data.data) this.setState({ data: { results: data.data.results.results }, isLoading: false });
 		if (data.err) this.setState({ err: data.err, isLoading: false });
 	};
 

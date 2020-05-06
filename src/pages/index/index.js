@@ -32,7 +32,7 @@ const Home = (props) => {
 				et sapien ultricies, blandit lectus eleifend, laoreet magna. Integer at velit et justo cursus dapibus.
 				Sed est lorem, interdum ut ornare ac, tristique id augue.
 			</p>
-			<DataList endpoint="users" />
+			<DataList endpoint="people" />
 		</layout.Wrap>
 	);
 };
