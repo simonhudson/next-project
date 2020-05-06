@@ -4,7 +4,7 @@ require('dotenv').config();
 
 const setEnvVars = () => {
 	const envObj = {};
-	const KEYS_TO_SET = ['API_URL'];
+	const KEYS_TO_SET = ['API_URL', 'APP_ENV'];
 	for (let key in process.env) {
 		if (KEYS_TO_SET.includes(key)) envObj[key] = process.env[key];
 	}
