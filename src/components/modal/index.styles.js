@@ -39,6 +39,18 @@ const Wrap = styled.div`
 		)};
 `;
 
+const Inner = styled.div`
+	padding-top: ${rem(30)};
+
+	${({ theme }) =>
+		theme.media(
+			'tablet-p',
+			`
+            padding-top: ${rem(20)};
+			`
+		)};
+`;
+
 const CloseButton = styled.button`
 	background: 0;
 	border: 0;
@@ -49,4 +61,4 @@ const CloseButton = styled.button`
 	z-index: ${({ theme }) => theme.zIndex.indexOf('modal-close')};
 `;
 
-export { Overlay, Wrap, CloseButton };
+export { Overlay, Wrap, Inner, CloseButton };
