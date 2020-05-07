@@ -10,4 +10,5 @@ module.exports = {
 	palette: require('./palette'),
 	spacing: require('./spacing'),
 	typography: require('./typography'),
+	zIndex: require('./z-index'),
 };
