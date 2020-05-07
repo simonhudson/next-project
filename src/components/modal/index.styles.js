@@ -40,9 +40,12 @@ const Wrap = styled.div`
 `;
 
 const CloseButton = styled.button`
+	background: 0;
+	border: 0;
+	padding: 0;
 	position: absolute;
-	right: 0;
-	top: 0;
+	right: ${rem(20)};
+	top: ${rem(20)};
 	z-index: ${({ theme }) => theme.zIndex.indexOf('modal-close')};
 `;
 
