@@ -10,5 +10,6 @@ module.exports = {
 	palette: require('./palette'),
 	spacing: require('./spacing'),
 	typography: require('./typography'),
+	visuallyHidden: require('./visually-hidden'),
 	zIndex: require('./z-index'),
 };

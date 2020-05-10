@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import DataList from '~/components/data-list';
 import Modal from '~/components/modal';
 import Theme from '~/theme';
-// import { layout, typography } from '~/theme';
+import VisuallyHidden from '~/components/visually-hidden';
 import { openModal, closeModal } from '~/components/modal/methods';
 
 class Home extends Component {
@@ -22,6 +22,7 @@ class Home extends Component {
 		return (
 			<>
 				<Theme.layout.Wrap>
+					<VisuallyHidden>This is hidden</VisuallyHidden>
 					<Theme.typography.H1>Develop branch test</Theme.typography.H1>
 					<p>
 						This page has been rendered on the server. You can turn JavaScript off and it will still be
