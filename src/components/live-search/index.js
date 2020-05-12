@@ -69,6 +69,7 @@ class LiveSearch extends Component {
 	};
 
 	render = () => {
+		// const { props, state } = this;
 		return (
 			<>
 				<label htmlFor="js-live-search">Find user&nbsp;</label>
