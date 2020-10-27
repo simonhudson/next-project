@@ -1,6 +1,8 @@
 'use strict';
 
 require('dotenv').config();
+const { createSecureHeaders } = require('next-secure-headers');
+const cspWhitelist = require('./src/config/cspWhitelist');
 
 const setEnvVars = () => {
 	const envObj = {};
@@ -20,5 +22,21 @@ module.exports = {
 		});
 
 		return config;
+	},
+	devIndicators: {
+		autoPrerender: false,
+	},
+	poweredByHeader: false,
+	async headers() {
+		return [{
+			source: '/(.*)',
+			headers: createSecureHeaders({
+				forceHTTPSRedirect: [true, { maxAge: 60 * 60 * 24 * 4, includeSubDomains: true }],
+				referrerPolicy: 'same-origin',
+				frameGuard: 'deny',
+				xssProtection: 'sanitize',
+				contentSecurityPolicy: { directives: cspWhitelist },
+			}),
+		}];
 	},
 };
