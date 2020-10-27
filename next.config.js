@@ -32,7 +32,7 @@ module.exports = {
 			source: '/(.*)',
 			headers: createSecureHeaders({
 				forceHTTPSRedirect: [true, { maxAge: 60 * 60 * 24 * 4, includeSubDomains: true }],
-				referrerPolicy: 'same-origin',
+				// referrerPolicy: 'same-origin',
 				frameGuard: 'deny',
 				xssProtection: 'sanitize',
 				contentSecurityPolicy: { directives: cspWhitelist },
