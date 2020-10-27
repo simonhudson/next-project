@@ -14,7 +14,7 @@ async function makeRequest(endpoint, method) {
 	if (!endpoint || !method) return null;
 	const options = { ...COMMON_OPTIONS, method };
 	try {
-		const res = await axios[method.toLowerCase()](`${process.env.API_URL}/${endpoint}`, options);
+		const res = await axios[method.toLowerCase()](`https://${process.env.API_HOSTNAME}/${endpoint}`, options);
 		responseObj = { ...responseObj, ...res };
 		return responseObj;
 	} catch (err) {
