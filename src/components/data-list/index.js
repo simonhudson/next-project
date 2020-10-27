@@ -32,6 +32,7 @@ class DataList extends Component {
 					<ul>
 						{this.state.data.results.map((item, index) => (
 							<li key={index}>
+								<img alt="" src={item.avatar} />
 								{item.first_name} {item.last_name}
 							</li>
 						))}
