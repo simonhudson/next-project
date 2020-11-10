@@ -18,7 +18,7 @@ const Wrapper = styled.div`
 		)};
 `;
 
-const Heading = styled.p`
+const Heading = styled.h1`
 	font-family: 'Lora', georgia, 'times new roman', serif;
 	font-size: ${rem(28)};
 	font-weight: 500;
