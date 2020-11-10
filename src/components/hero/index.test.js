@@ -17,7 +17,7 @@ const baseProps = {
 describe('Hero', () => {
 	let objectUnderTest;
 	const selector = `div[data-test="hero"]`;
-	const heading = `p[data-test="hero__heading"]`;
+	const heading = `h1[data-test="hero__heading"]`;
 	const subHeading = `p[data-test="hero__sub-heading"]`;
 
 	afterEach(() => (!!objectUnderTest ? objectUnderTest.unmount() : null));
